@@ -1,3 +1,5 @@
+VRTK with Chapter 5 example from https://github.com/Apress/virtual-reality-with-vrtk4
+
 [![VRTK logo][VRTK-Image]](#)
 
 > ### VRTK Farm Yard Example - Virtual Reality Toolkit
