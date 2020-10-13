@@ -19,16 +19,24 @@ public class Calculator : MonoBehaviour
         float cubeWidth = transform.localScale.z;
         float cubeHeight = transform.localScale.y;
         float startingVolume = cubeLength * cubeWidth * cubeHeight;
+        float rotationX = transform.rotation.x;
+        float rotationy = transform.rotation.y;
+        float rotationz = transform.rotation.z;
+        rotationy = rotationy - 90;
+      
+        
+        transform.rotation = Quaternion.Euler(rotationX,rotationy,rotationz);
+
         Debug.Log(startingVolume);
     }
 
     //Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            CalculateInterest();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    CalculateInterest();
+        //}
     }
 
     public void CalculateInterest()
